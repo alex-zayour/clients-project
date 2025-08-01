@@ -14,7 +14,9 @@ fetchButton.addEventListener('click', () => {
 });
 
 async function fetchStockData(ticker) {
-    const apiKey = 'demo'; // Using the demo key
+    // IMPORTANT: Replace 'YOUR_API_KEY_HERE' with your actual free API key from Alpha Vantage.
+    // Get your free key here: https://www.alphavantage.co/support/#api-key
+    const apiKey = 'YOUR_API_KEY_HERE';
     const url = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${ticker}&outputsize=full&apikey=${apiKey}`;
 
     analysisOutput.textContent = `Fetching data for ${ticker}...`;
