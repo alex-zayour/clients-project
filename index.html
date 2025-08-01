@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Forecaster</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Price Forecaster</h1>
+        <div class="input-container">
+            <input type="text" id="stock-ticker-input" placeholder="Enter Stock Ticker (e.g., AAPL)">
+            <button id="fetch-button">Get Price Data</button>
+        </div>
+        <div class="chart-container">
+            <canvas id="stock-chart"></canvas>
+        </div>
+        <div id="analysis-container">
+            <h2>Analysis</h2>
+            <p id="analysis-output">Enter a stock ticker to see the analysis.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
